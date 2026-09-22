@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:colorAccent">#8B1E3F</item>
-        <item name="android:navigationBarColor">#FFFFFF</item>
-        <item name="android:statusBarColor">#8B1E3F</item>
-        <item name="android:windowLightStatusBar">false</item>
-    </style>
-</resources>
+<manifest xmlns:android="[http://schemas.android.com/apk/res/android](http://schemas.android.com/apk/res/android)">
+    <application 
+        android:theme="@style/AppTheme" 
+        android:label="Gulab Sarvatobhadra">
+        <activity 
+            android:name=".MainActivity" 
+            android:screenOrientation="portrait" 
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
